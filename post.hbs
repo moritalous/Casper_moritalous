@@ -83,7 +83,14 @@ into the {body} tag of the default.hbs template --}}
     </header>
 
     <section class="gh-content gh-canvas">
-        {{content}}
+        <section>
+            {{> share-block}}
+            {{content}}
+            {{> share-block}}
+        </section>
+        <section class="sidebar-ad">
+            <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=11&l=ur1&category=jpprimeday&banner=1TRTXZYA3FARD6JMH702&f=ifr&linkID=80f78b56c3440f2926cac2a61706bc3d&t=twelve02-22&tracking_id=twelve02-22" width="120" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+        </section>
     </section>
 
     {{!--
