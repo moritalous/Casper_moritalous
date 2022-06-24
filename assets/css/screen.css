@@ -226,6 +226,14 @@ body:not(.has-cover) .site-header-content:not(.left-aligned) {
     display: contents;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: inherit;
+}
+
 @media (max-width: 767px) {
     .has-cover .site-header-content {
         padding-bottom: 36px;
@@ -586,6 +594,12 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     }
 
     .sidebar-ad {
+        display: none;
+    }
+    .mobile {
+        display: inherit;
+    }
+    .desktop {
         display: none;
     }
 }
