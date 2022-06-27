@@ -3,13 +3,13 @@ docker run -it -v `pwd`:/work -u `id -u`:`id -g` --entrypoint bash node:lts
 ```
 
 ```
-node install
+npm install
 ```
 
 ```
-node run dev
+npm run dev
 ```
 
 ```
-node run zip
+npm run zip
 ```
