@@ -92,13 +92,12 @@ into the {body} tag of the default.hbs template --}}
     </header>
 
     <section class="gh-canvas gh-content">
-        <section class="gh-canvas gh-content">
-            {{> share-block}}
-            {{content}}
-            {{> share-block}}
-        </section>
-        <section class="sidebar-ad">
-            {{> sidebar-ad}}
+        {{> sidebar-ad}}
+        <section class="gh-content">
+        {{> share-block}}
+        {{content}}
+        {{> share-block}}
+
         </section>
     </section>
 
