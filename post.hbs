@@ -92,6 +92,9 @@ into the {body} tag of the default.hbs template --}}
     </header>
 
     <section class="gh-canvas gh-content">
+        <section class="desktop" style="grid-column: wide-start / main-start;">
+            <div class="gh-toc"></div> {{! The TOC will be inserted here }}
+        </section>
         <section class="gh-content">
         {{> share-block}}
         {{content}}
