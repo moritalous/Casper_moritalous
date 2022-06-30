@@ -231,7 +231,7 @@ body:not(.has-cover) .site-header-content:not(.left-aligned) {
 }
 
 .desktop {
-    
+    display: block;
 }
 
 @media (max-width: 767px) {
@@ -597,7 +597,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         display: none;
     }
     .mobile {
-
+        display: block;
     }
     .desktop {
         display: none;
