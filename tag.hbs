@@ -49,4 +49,17 @@
 
     </div>
 </div>
+<section class="gh-content">
+<section style="text-align: center;">
+    {{#get "tags" limit="all"}}
+    <ul class="tags">
+        {{#foreach tags}}
+        <span class="post-card-primary-tag">
+        <a href="{{url}}">{{name}}</a>
+        </span>
+        {{/foreach}}
+    </ul>
+    {{/get}}
+</section>
+</section>
 </main>
