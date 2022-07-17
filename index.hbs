@@ -41,6 +41,18 @@ into the {body} of the default.hbs template --}}
 <main id="site-main" class="site-main outer">
 <div class="inner posts">
 
+    <h3>Featured post</h3>
+    <div class="post-feed">
+        {{#get "posts" filter="featured:true" limit="3" as |featured|}}
+        {{#foreach featured}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card-featured"}}
+        {{/foreach}}
+        {{/get}}
+    </div>
+
+    <hr>
+    <h3>Recent post</h3>
     <div class="post-feed">
         {{#foreach posts}}
             {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
