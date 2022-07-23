@@ -37,9 +37,12 @@ into the {body} tag of the default.hbs template --}}
 
     <section class="gh-content gh-canvas">
         {{!-- {{> share-block}} --}}
+        <section class="gh-content">
         {{content}}
+        </section>
         {{!-- {{> share-block}} --}}
-        <section style="text-align: center;">
+        {{> sidebar-ad}}
+        {{!-- <section style="text-align: center;">
             {{#get "tags" limit="all"}}
             <ul class="tags">
                 {{#foreach tags}}
@@ -49,7 +52,7 @@ into the {body} tag of the default.hbs template --}}
                 {{/foreach}}
             </ul>
             {{/get}}
-        </section>
+        </section> --}}
     </section>
 
 </article>

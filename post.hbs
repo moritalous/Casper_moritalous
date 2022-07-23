@@ -18,7 +18,7 @@ into the {body} tag of the default.hbs template --}}
                     <a href="{{url}}">{{name}}</a>
                 </span>
             {{/primary_tag}}
-            {{#if tags}}
+            {{!-- {{#if tags}}
             <span>&times;</span>
             {{#tags from="2" separator="/"}}
                 <span class="post-card-primary-tag">
@@ -28,7 +28,7 @@ into the {body} tag of the default.hbs template --}}
             {{/if}}
             {{#if featured}}
                 <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
-            {{/if}}
+            {{/if}} --}}
         </div>
 
         <h1 class="article-title">{{title}}</h1>
@@ -106,8 +106,8 @@ into the {body} tag of the default.hbs template --}}
         {{content}}
         {{!-- {{> share-block}} --}}
         </section>
-        {{!-- {{> sidebar-ad}} --}}
-        <section style="text-align: center;">
+        {{> sidebar-ad}}
+        {{!-- <section style="text-align: center;">
             {{#get "tags" limit="all"}}
             <ul class="tags">
                 {{#foreach tags}}
@@ -117,7 +117,7 @@ into the {body} tag of the default.hbs template --}}
                 {{/foreach}}
             </ul>
             {{/get}}
-        </section>
+        </section> --}}
     </section>
 
     {{!--
