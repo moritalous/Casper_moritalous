@@ -57,9 +57,11 @@ into the {body} tag of the default.hbs template --}}
             <div class="article-byline-meta">
                 <h4 class="author-name"><span style="color: var(--color-darkgrey);">書いた人：</span>{{authors}}</h4>
                 {{#foreach authors}}
+                <div class="">連絡先: <a href="mailto:moritalous@twelve.tk">moritalous@twelve.tk</a></div>
                 {{#if bio}}
                 <div class="">{{bio}}</div>
                 {{/if}}
+                
                 {{/foreach}}
                 <div class="byline-meta-content">
                     <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
