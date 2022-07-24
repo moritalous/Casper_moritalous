@@ -119,15 +119,15 @@ into the {body} tag of the default.hbs template --}}
             {{/get}}
         </section> --}}
         <div  class="mobile">
-        <hr>
-        <h4>カテゴリ一覧</h2>
+        <h4>カテゴリ一覧</h4>
         <div>
-            <li style="list-style: square;"><a href="/tag/aws/">AWS</a></li>
-            <li style="list-style: square;"><a href="/tag/azure/">Azure</a></li>
-            <li style="list-style: square;"><a href="/tag/gcp/">GCP</a></li>
+            {{#get "tags" limit="all"}}
+            {{#foreach tags}}
+            <li style="list-style: square;"><a href="{{url}}">{{name}}</a></li>
+            {{/foreach}}
+            {{/get}}
         </div>
         </div>
-        
 
     </section>
 
