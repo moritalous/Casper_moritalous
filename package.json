@@ -122,7 +122,7 @@
             },
             "show_logo_in_navigation": {
                 "type": "boolean",
-                "default": false,
+                "default": true,
                 "group": "homepage"
             },
             "feed_layout": {
