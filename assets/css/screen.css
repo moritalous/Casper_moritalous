@@ -634,6 +634,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     }
     .gh-head-open #gh-head .gh-head-inner {
         grid-template-rows: auto 1fr auto;
+        padding-bottom: 32px;
     }
     .gh-head-open #gh-head .gh-head-actions,
     .gh-head-open #gh-head .gh-head-menu {
