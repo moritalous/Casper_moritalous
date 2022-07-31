@@ -800,7 +800,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 
 .post-card-title {
     margin: 0;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     font-weight: 800;
 }
 
@@ -938,7 +938,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
     .post-card-large .post-card-title {
         margin-top: 0;
-        font-size: 4.4rem;
+        /* font-size: 4.4rem; */
         line-height: 1;
     }
 
@@ -981,7 +981,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card.dynamic .post-card-title {
-        font-size: 3rem;
+        /* font-size: 3rem; */
     }
 }
 
@@ -1017,7 +1017,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .article-title {
     margin-bottom: 0;
-    font-size: clamp(3.2rem, 5vw, 5.2rem);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
     font-weight: 800;
     line-height: 1;
     color: var(--color-darkgrey);
